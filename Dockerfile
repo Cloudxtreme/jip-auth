@@ -2,7 +2,11 @@
 # AUTHOR:         zhengxiaochuan <zhengxiaochuan-3@163.com>
 # DESCRIPTION:    ngx_openresty
 # TO_BUILD:       docker build -rm -t ngx_openresty .
+<<<<<<< HEAD
 # TO_RUN:         docker run -d --name jip-auth -p 5555:5555 -p 6666:6666 -v /home/CaaS/jip-auth/auth/conf/:/usr/local/openresty/nginx/conf/ -v /home/CaaS/jip-auth/auth/lua/:/usr/local/openresty/nginx/lua --link jip-registry:jip-registry   jip-auth
+=======
+# TO_RUN:         docker run -p hostport:80 -v /usr/local/openresty/nginx/conf/:/usr/local/openresty/nginx/conf/ -v /usr/local/openresty/nginx/lua/:/usr/local/openresty/nginx/lua/ -d ngx_openresty
+>>>>>>> 2d9228c4452cb2410f5d9fd34edf13a69eb0c42a
 
 FROM ubuntu:14.04
 ENV DEBIAN_FRONTEND noninteractive
